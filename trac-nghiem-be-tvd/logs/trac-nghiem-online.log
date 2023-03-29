@@ -1,0 +1,348 @@
+2023-03-29 07:35:04 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 9400 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:35:04 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:35:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:35:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:35:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:35:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:35:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:35:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:35:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 656 ms
+2023-03-29 07:35:05 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2330e3e0]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 07:35:05 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 71dba1bc-d47b-426f-bf90-e5cd3ff0b402
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:35:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69d45cca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fdf17dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@24f870ee, org.springframework.security.web.header.HeaderWriterFilter@65f651eb, org.springframework.security.web.csrf.CsrfFilter@7bab5898, org.springframework.security.web.authentication.logout.LogoutFilter@235d29d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c101cc1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9b9a327, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6e6d4780, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5ec5ea63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c78e551, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1886991b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@650ae78c, org.springframework.security.web.session.SessionManagementFilter@1f1ff879, org.springframework.security.web.access.ExceptionTranslationFilter@68ac9ec5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24a86066]
+2023-03-29 07:35:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:35:05 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.481 seconds (JVM running for 2.051)
+2023-03-29 07:35:07 [cluster-ClusterId{value='642387b975f7f005f39b332e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-03-29 07:37:07 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 17828 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:37:07 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:37:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:37:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:37:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:37:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:37:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:37:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:37:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
+2023-03-29 07:37:09 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 296fe0a7-9cd9-4526-a69d-df8d5c40783d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:37:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46185a1b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51288417, org.springframework.security.web.context.SecurityContextPersistenceFilter@4beabeec, org.springframework.security.web.header.HeaderWriterFilter@6c931d35, org.springframework.security.web.csrf.CsrfFilter@2f00f851, org.springframework.security.web.authentication.logout.LogoutFilter@360bc645, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a865273, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2dd2e270, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60cf62ad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@36417a54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b22d8a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59ed3e6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e0895f5, org.springframework.security.web.session.SessionManagementFilter@49122b8f, org.springframework.security.web.access.ExceptionTranslationFilter@2ba5aa7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@711d1a52]
+2023-03-29 07:37:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:37:09 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.437 seconds (JVM running for 1.987)
+2023-03-29 07:37:44 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 26480 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:37:44 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:37:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:37:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:37:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:37:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:37:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 648 ms
+2023-03-29 07:37:45 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7b78d643-4a2f-49c7-8031-37beeab7db91
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:37:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7efd28bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@672b72ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@9fc9f91, org.springframework.security.web.header.HeaderWriterFilter@65d57e4e, org.springframework.security.web.csrf.CsrfFilter@3c69362a, org.springframework.security.web.authentication.logout.LogoutFilter@44b18fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42ea287, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f77b5cc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7718a40f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2b2f5fcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@108a46d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17690e14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@312b34e3, org.springframework.security.web.session.SessionManagementFilter@23a5818e, org.springframework.security.web.access.ExceptionTranslationFilter@10afe71a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42373389]
+2023-03-29 07:37:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:37:45 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.332 seconds (JVM running for 1.893)
+2023-03-29 07:39:41 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 23748 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:39:41 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:39:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:39:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:39:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:39:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:39:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:39:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:39:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 701 ms
+2023-03-29 07:39:42 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@61f39bb]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 07:39:42 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bf41ecda-e703-416b-ad94-71bd649177f9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:39:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d97caa4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6732726, org.springframework.security.web.context.SecurityContextPersistenceFilter@feb98ef, org.springframework.security.web.header.HeaderWriterFilter@432f521f, org.springframework.security.web.csrf.CsrfFilter@71c17a57, org.springframework.security.web.authentication.logout.LogoutFilter@5c441290, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@670b3ca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@348ad293, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@474821de, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c101cc1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@571a01f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e0ec41f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d64c581, org.springframework.security.web.session.SessionManagementFilter@7bab5898, org.springframework.security.web.access.ExceptionTranslationFilter@862f408, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b48e183]
+2023-03-29 07:39:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:39:42 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.532 seconds (JVM running for 2.106)
+2023-03-29 07:39:44 [cluster-ClusterId{value='642388ce9a0a6225186d6b3b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+2023-03-29 07:47:22 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 27748 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:47:22 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:47:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:47:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:47:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:47:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:47:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:47:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:47:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 667 ms
+2023-03-29 07:47:23 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 19028c1f-dbb2-4db3-afca-17d605635685
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:47:23 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7899de11, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@290d10ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@47ffe971, org.springframework.security.web.header.HeaderWriterFilter@68880c21, org.springframework.security.web.csrf.CsrfFilter@67b100fe, org.springframework.security.web.authentication.logout.LogoutFilter@71978f46, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30e9ca13, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4edef76c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1bc0d349, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72f8ae0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14fa92af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@339a3670, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@644ded04, org.springframework.security.web.session.SessionManagementFilter@4195105b, org.springframework.security.web.access.ExceptionTranslationFilter@7cd4a4d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@216e0771]
+2023-03-29 07:47:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:47:23 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.377 seconds (JVM running for 1.947)
+2023-03-29 07:57:36 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 24256 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 07:57:36 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 07:57:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 07:57:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-03-29 07:57:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 07:57:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 07:57:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 07:57:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 07:57:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 678 ms
+2023-03-29 07:57:37 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d4301a22-1a58-406f-96b0-9d5e8c8cd0cf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-29 07:57:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@712cfb63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32e54a9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7aac8884, org.springframework.security.web.header.HeaderWriterFilter@54e3658c, org.springframework.security.web.csrf.CsrfFilter@4eba373c, org.springframework.security.web.authentication.logout.LogoutFilter@5bc28f40, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@799ed4e8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6edcad64, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15639440, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5624657a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b852b49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@122d6c22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@121bb45b, org.springframework.security.web.session.SessionManagementFilter@3c5dbdf8, org.springframework.security.web.access.ExceptionTranslationFilter@65b97f47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65e21ce3]
+2023-03-29 07:57:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 07:57:38 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 1.406 seconds (JVM running for 1.986)
+2023-03-29 08:21:12 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 24736 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:21:12 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:21:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:21:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:21:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:21:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:21:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:21:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 919 ms
+2023-03-29 08:21:13 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter': Unsatisfied dependency expressed through field 'customUserDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes\tracnghiemonline\tracnghiembetvd\securities\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in tracnghiemonline.tracnghiembetvd.repositories.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'mongoTemplate' available
+2023-03-29 08:21:13 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-29 08:21:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-03-29 08:21:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-29 08:21:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in tracnghiemonline.tracnghiembetvd.securities.CustomUserDetailsService required a bean named 'mongoTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'mongoTemplate' in your configuration.
+
+2023-03-29 08:23:25 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 5208 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:23:25 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:23:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:23:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:23:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:23:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:23:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:23:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:23:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 887 ms
+2023-03-29 08:23:26 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter': Unsatisfied dependency expressed through field 'customUserDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes\tracnghiemonline\tracnghiembetvd\securities\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in tracnghiemonline.tracnghiembetvd.repositories.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'mongoTemplate' available
+2023-03-29 08:23:26 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-29 08:23:26 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-03-29 08:23:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-29 08:23:26 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in tracnghiemonline.tracnghiembetvd.securities.CustomUserDetailsService required a bean named 'mongoTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'mongoTemplate' in your configuration.
+
+2023-03-29 08:27:20 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 12376 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:27:20 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:27:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:27:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:27:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:27:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:27:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:27:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:27:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+2023-03-29 08:27:21 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter': Unsatisfied dependency expressed through field 'customUserDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes\tracnghiemonline\tracnghiembetvd\securities\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in tracnghiemonline.tracnghiembetvd.repositories.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'mongoTemplate' available
+2023-03-29 08:27:21 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-29 08:27:21 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-03-29 08:27:21 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-29 08:27:21 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in tracnghiemonline.tracnghiembetvd.securities.CustomUserDetailsService required a bean named 'mongoTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'mongoTemplate' in your configuration.
+
+2023-03-29 08:29:36 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 21140 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:29:36 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:29:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:29:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:29:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:29:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:29:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:29:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:29:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 905 ms
+2023-03-29 08:29:37 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@59072e9d]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 08:29:37 [cluster-ClusterId{value='64239481d43b6805ffa0c5ee', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:30}] to localhost:27017
+2023-03-29 08:29:37 [cluster-rtt-ClusterId{value='64239481d43b6805ffa0c5ee', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:31}] to localhost:27017
+2023-03-29 08:29:37 [cluster-ClusterId{value='64239481d43b6805ffa0c5ee', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23029000}
+2023-03-29 08:29:38 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@631c6d11, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65be88ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ca14cf4, org.springframework.security.web.header.HeaderWriterFilter@19dc0d32, org.springframework.security.web.authentication.logout.LogoutFilter@3c9ef6e9, tracnghiemonline.tracnghiembetvd.securities.JwtTokenFilter@7be2f29a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46c10083, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e98b788, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62ade015, org.springframework.security.web.session.SessionManagementFilter@184823ed, org.springframework.security.web.access.ExceptionTranslationFilter@5e0c4f21, org.springframework.security.web.access.intercept.AuthorizationFilter@6cbb175]
+2023-03-29 08:29:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 08:29:38 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 2.151 seconds (JVM running for 2.776)
+2023-03-29 08:33:09 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 19080 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:33:09 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:33:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:33:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:33:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:33:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:33:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:33:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:33:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 877 ms
+2023-03-29 08:33:10 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@455c1d8c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 08:33:10 [cluster-ClusterId{value='64239556a8ca2333b68da7b0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:34}] to localhost:27017
+2023-03-29 08:33:10 [cluster-rtt-ClusterId{value='64239556a8ca2333b68da7b0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:33}] to localhost:27017
+2023-03-29 08:33:10 [cluster-ClusterId{value='64239556a8ca2333b68da7b0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12366000}
+2023-03-29 08:33:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b97907c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59096b66, org.springframework.security.web.context.SecurityContextPersistenceFilter@184823ed, org.springframework.security.web.header.HeaderWriterFilter@166c2c17, org.springframework.security.web.authentication.logout.LogoutFilter@5aa62ee7, tracnghiemonline.tracnghiembetvd.securities.JwtTokenFilter@2c2a027c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ca14cf4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c10083, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@631c6d11, org.springframework.security.web.session.SessionManagementFilter@644d1b61, org.springframework.security.web.access.ExceptionTranslationFilter@42ef042a, org.springframework.security.web.access.intercept.AuthorizationFilter@59636c47]
+2023-03-29 08:33:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 08:33:11 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 2.058 seconds (JVM running for 2.619)
+2023-03-29 08:37:19 [http-nio-3456-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 08:37:19 [http-nio-3456-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-29 08:37:19 [http-nio-3456-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-29 08:37:20 [http-nio-3456-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:35}] to localhost:27017
+2023-03-29 08:39:40 [http-nio-3456-exec-4] INFO  t.t.c.AuthenticationController - User tvd@gmail.com login at Wed Mar 29 08:39:40 ICT 2023
+2023-03-29 08:42:08 [http-nio-3456-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-03-29 08:45:23 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 22008 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:45:23 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:45:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:45:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:45:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:45:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:45:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:45:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:45:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 922 ms
+2023-03-29 08:45:24 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@455c1d8c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 08:45:24 [cluster-ClusterId{value='64239834bffc656c51b8862c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:36}] to localhost:27017
+2023-03-29 08:45:24 [cluster-rtt-ClusterId{value='64239834bffc656c51b8862c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:37}] to localhost:27017
+2023-03-29 08:45:24 [cluster-ClusterId{value='64239834bffc656c51b8862c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11519200}
+2023-03-29 08:45:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52b959df, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38588dea, org.springframework.security.web.context.SecurityContextPersistenceFilter@7135ce0a, org.springframework.security.web.header.HeaderWriterFilter@55736cfe, org.springframework.security.web.authentication.logout.LogoutFilter@794eeaf8, tracnghiemonline.tracnghiembetvd.securities.JwtTokenFilter@2e26173, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e590b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1df5c7e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@553d2579, org.springframework.security.web.session.SessionManagementFilter@6b415f5f, org.springframework.security.web.access.ExceptionTranslationFilter@43da0955, org.springframework.security.web.access.intercept.AuthorizationFilter@5729b410]
+2023-03-29 08:45:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 08:45:25 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 2.147 seconds (JVM running for 2.717)
+2023-03-29 08:45:30 [http-nio-3456-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 08:45:30 [http-nio-3456-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-29 08:45:30 [http-nio-3456-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-29 08:45:30 [http-nio-3456-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:38}] to localhost:27017
+2023-03-29 08:50:50 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 2288 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-be-tvd)
+2023-03-29 08:50:50 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 08:50:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 08:50:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 08:50:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 08:50:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 08:50:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 08:50:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 08:50:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 890 ms
+2023-03-29 08:50:51 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@59072e9d]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 08:50:51 [cluster-rtt-ClusterId{value='6423997b3bdd8e389683958b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:42}] to localhost:27017
+2023-03-29 08:50:51 [cluster-ClusterId{value='6423997b3bdd8e389683958b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:43}] to localhost:27017
+2023-03-29 08:50:51 [cluster-ClusterId{value='6423997b3bdd8e389683958b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11428000}
+2023-03-29 08:50:52 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28e8888d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e98b788, org.springframework.security.web.context.SecurityContextPersistenceFilter@bc09d57, org.springframework.security.web.header.HeaderWriterFilter@6e243175, org.springframework.security.web.authentication.logout.LogoutFilter@7c96c85, tracnghiemonline.tracnghiembetvd.securities.JwtTokenFilter@6d8796c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@467045c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a566922, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@794eeaf8, org.springframework.security.web.session.SessionManagementFilter@4d0cc83e, org.springframework.security.web.access.ExceptionTranslationFilter@678a9516, org.springframework.security.web.access.intercept.AuthorizationFilter@2443135]
+2023-03-29 08:50:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 08:50:52 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 2.097 seconds (JVM running for 2.69)
+2023-03-29 08:50:57 [http-nio-3456-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 08:50:57 [http-nio-3456-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-29 08:50:57 [http-nio-3456-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-29 08:50:57 [http-nio-3456-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:44}] to localhost:27017
+2023-03-29 09:03:13 [main] INFO  t.t.TracNghiemBeTvdApplication - Starting TracNghiemBeTvdApplication using Java 1.8.0_301 on MSI with PID 3828 (E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-online\trac-nghiem-be-tvd\target\classes started by TVD in E:\Document\HK2-2022-2023\MTSE\MyProject\trac-nghiem-online\trac-nghiem-be-tvd)
+2023-03-29 09:03:13 [main] INFO  t.t.TracNghiemBeTvdApplication - The following 1 profile is active: "dev"
+2023-03-29 09:03:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-29 09:03:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 MongoDB repository interfaces.
+2023-03-29 09:03:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3456 (http)
+2023-03-29 09:03:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-29 09:03:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-29 09:03:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-29 09:03:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 921 ms
+2023-03-29 09:03:14 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/1.8.0_301-b09"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@59072e9d]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-03-29 09:03:14 [cluster-rtt-ClusterId{value='64239c6243ff3345b65cd17d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:45}] to localhost:27017
+2023-03-29 09:03:14 [cluster-ClusterId{value='64239c6243ff3345b65cd17d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:46}] to localhost:27017
+2023-03-29 09:03:14 [cluster-ClusterId{value='64239c6243ff3345b65cd17d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10363200}
+2023-03-29 09:03:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62ade015, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70ede57d, org.springframework.security.web.context.SecurityContextPersistenceFilter@46c10083, org.springframework.security.web.header.HeaderWriterFilter@7c96c85, org.springframework.security.web.authentication.logout.LogoutFilter@57e5396b, tracnghiemonline.tracnghiembetvd.securities.JwtTokenFilter@7be2f29a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e98b788, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37c5284a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70997a94, org.springframework.security.web.session.SessionManagementFilter@3ca14cf4, org.springframework.security.web.access.ExceptionTranslationFilter@166c2c17, org.springframework.security.web.access.intercept.AuthorizationFilter@7ab802f4]
+2023-03-29 09:03:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3456 (http) with context path ''
+2023-03-29 09:03:15 [main] INFO  t.t.TracNghiemBeTvdApplication - Started TracNghiemBeTvdApplication in 2.137 seconds (JVM running for 2.731)
+2023-03-29 09:03:22 [http-nio-3456-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 09:03:22 [http-nio-3456-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-29 09:03:22 [http-nio-3456-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-29 09:03:22 [http-nio-3456-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:47}] to localhost:27017
+2023-03-29 09:03:22 [http-nio-3456-exec-1] INFO  t.t.c.AuthenticationController - User tvd@gmail.com login at Wed Mar 29 09:03:22 ICT 2023
