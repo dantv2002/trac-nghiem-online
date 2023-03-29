@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "6411c9d5c5bd296ed0a36939"
+  },
+  "name": "tvd",
+  "email": "tvd@gmail.com",
+  "password": "123456",
+  "roles": [
+    "ROLE_ADMIN"
+  ],
+  "trangThai": true,
+  "createdDate": {
+    "$date": {
+      "$numberLong": "1678887381931"
+    }
+  },
+  "lastModifiedDate": {
+    "$date": {
+      "$numberLong": "1678887381931"
+    }
+  },
+  "_class": "tracnghiemonline.tracnghiembetvd.entities.User"
+}]
