@@ -40,4 +40,4 @@ paging:
 server:
   error:
     include-message: always
-  port: 3456
+  port: 8080

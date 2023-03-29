@@ -41,18 +41,18 @@ public class AuthenticationController {
     @ApiOperation(value = "login form (username, password), avatar null")
     @PostMapping
     public ResponseEntity<TokenDetails> login(@Valid @RequestBody AccountDto dto) {
-        UserAuthenticationToken authenticationToken = new UserAuthenticationToken(
-                dto.getUsername(),
-                dto.getPassword(),
-                true
-        );
-        try {
-            authenticationManager.authenticate(authenticationToken);
-        } catch (UserNotFoundAuthenticationException | BadCredentialsException ex) {
-            throw new InvalidException(ex.getMessage());
-        }catch (Exception ex){
-            System.out.println(ex.getMessage());
-        }
+//        UserAuthenticationToken authenticationToken = new UserAuthenticationToken(
+//                dto.getUsername(),
+//                dto.getPassword(),
+//                true
+//        );
+//        try {
+//            authenticationManager.authenticate(authenticationToken);
+//        } catch (UserNotFoundAuthenticationException | BadCredentialsException ex) {
+//            throw new InvalidException(ex.getMessage());
+//        }catch (Exception ex){
+//            System.out.println(ex.getMessage());
+//        }
         final JwtUserDetails userDetails = customUserDetailsService
                 .loadUserByUsername(dto.getUsername());
         final TokenDetails result = jwtTokenUtils.getTokenDetails(userDetails, null);
